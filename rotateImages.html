@@ -1,0 +1,34 @@
+
+<!doctype html>
+<!-- ECrotateImages.html                     Esmeralda Cervantes  -->
+<!-- Web page that rotates three images at the click of one of 2 buttons. -->
+<!-- ======================================================== -->
+
+<html>
+ <head>
+   <title>Image Rotator on Click of a button</title>
+ </head>
+
+ <body>
+  <div style="text-align:center">
+  <h2>Image Swapper</h2>
+  <p>
+   <img id="leftImg" src="/Users/esmeraldacervantes/Desktop/Computer Science/Lab 8/lab8/ImagesForHTMLandJS/happy.gif">
+   <img id="middleImg" src="/Users/esmeraldacervantes/Desktop/Computer Science/Lab 8/lab8/ImagesForHTMLandJS/sad.gif">
+   <img id="rightImg" src="/Users/esmeraldacervantes/Desktop/Computer Science/Lab 8/lab8/ImagesForHTMLandJS/surprised.gif">
+  </p>
+  <input type="button" value="Rotate Right"
+      onclick="
+              saved=document.getElementById('leftImg').src;
+              document.getElementById('leftImg').src= document.getElementById('middleImg').src;
+              document.getElementById('middleImg').src=saved;
+             ">
+  <input type="button" value="Rotate Left"
+      onclick="
+              saved=document.getElementById('middleImg').src;
+              document.getElementById('middleImg').src= 					      document.getElementById('rightImg').src;
+              document.getElementById('rightImg').src=saved;
+             ">
+   </div>
+ </body>
+</html>

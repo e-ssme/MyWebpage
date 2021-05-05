@@ -1,0 +1,37 @@
+
+<!doctype html
+<!-- quotes.html                                   Esmeralda Cervantes -->
+<!-- This web page gives a quote whenever you click on one of the Author's name. -->
+<!-- using buttons and mouse clics. -->
+<!-- =============================================================== -->
+
+<html>
+ <head>
+   <title>Using buttons and mouse clicks </title>
+ </head>
+
+ <body>
+<h1 style="text-align:center"> Computing Quotes </h1>
+<hr>
+	<div style="text-align:center">
+   <input type="button" value="Alan Turing"
+          onclick="document.getElementById('outputDiv').innerHTML=
+                     'I believe that at the end of the century the use of words and general educated opinion will have altered so much that one will be able to speak of machines thinking without expecting to be contradicted --<i> Alan Turing</i>';">
+  
+ <input type="button" value="John von Neumann"
+	  Onclick="document.getElementById('outputDiv').innerHTML=
+		     'It would appear that we have reached the limits of what it is possible to achieve with computer technology, although one should be careful with such statements, as they tend to sound pretty silly in 5 years.  -- <i> John von Neumann</i>';"/>
+ 
+ <input type="button" value="Tim Berners-Lee"
+	  Onclick="document.getElementById('outputDiv').innerHTML=
+		     'Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch. -- <i> Tim Berners-Lee </i>';"/>
+  
+ <input type="button" value="Clear Quotes"
+	  Onclick="document.getElementById('outputDiv').innerHTML='';"/>
+
+
+   <hr>
+   <div id="outputDiv">
+   </div>
+ </body>
+</html>

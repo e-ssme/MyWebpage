@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- EC_Story.html                          Esmeralda Cervantes      -->
+<!-- Web page that generates a story based on your inputs. -->
+<!-- =========================================================== -->
+
+<html>
+ <head>
+   <title> Esme's Story Generator </title>
+ </head>
+
+ <body>
+   <h2>Esme's Story Generator</h2>
+   <p>
+     Enter an adjective: 
+       <input type="text" id="adjectiveBox" size=20 value=" "> <br>
+     Enter a place: 
+       <input type="text" id="placeBox" size=20 value=" "> <br>
+     Enter an animal: <input type="text" id="animalBox" size=12 value=" "> <br>
+     Enter a season: <input type="text" id="seasonBox" size=20 value=" "> <br>
+     Enter an activity: <input type="text" id="activityBox" size=20 value=" "> <br>
+     Enter a food: <input type="text" id="foodBox" size=20 value=" "> 
+    
+   </p>
+     <input type="button" value="Click for Story"
+            onclick="document.getElementById('outputDiv').innerHTML=
+                       '<p>I always thought of family vacations to be ' +
+			(adjective = document.getElementById('adjectiveBox').value) + ',' +
+			' which is why my family always goes to' +
+			(place = document.getElementById('placeBox').value) + 	
+			' during the ' +
+			(season = document.getElementById('seasonBox').value)+ '.'+
+			' My favorite activity that we do is ' +
+			(activity = document.getElementById('activityBox').value) + ',' +
+			' especially if I\'m able to bring my pet' + 
+			(animal = document.getElementById('animalBox').value)+ '.' +
+			' Not to mention, the delicious' +
+			(food = document.getElementById('foodBox').value) + 
+			' we always get at Sam\'s Cafe.' + '</p><br>' + 
+			'Despite the delicious' +
+			food + ',' +
+			' I still don\'t like going during the' +
+			season + 
+			' because there is always so many people when we go ' +
+			activity + '.' +
+			' Of course my pet' + 
+			animal + ' loves it because he\'s such an extrovert.' +
+			' Even though we go each' +
+			season + ',' +
+			' I still think family vacations are' +
+			adjective + '.';">
+			
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>
